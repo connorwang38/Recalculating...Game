@@ -84,8 +84,10 @@ class Calculator {
       }
     }
   }
-  
-  
+
+let modal = document.querySelector(".modal");
+//let closeBtn = document.querySelector(".close-btn");
+
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
@@ -97,9 +99,19 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 
 document.addEventListener('click', () => {
     if (calculator.currentOperand == 20) {
-        console.log("Good job!");
+        modal.style.display = 'block';
     }
 })
+/*
+closeBtn.onclick = function(){
+  modal.style.display = "none"
+}*/
+
+window.onclick = function(e){
+  if(e.target == modal){
+    modal.style.display = "none"
+  }
+}
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
