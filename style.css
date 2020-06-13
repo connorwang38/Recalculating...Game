@@ -1,0 +1,14 @@
+p {
+    width: 394px;
+    height: 20px;
+    text-align: right;
+    border: solid black;
+    margin: 0;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    background-color: aquamarine;
+}
