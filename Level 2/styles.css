@@ -20,11 +20,11 @@ body {
 }
 
 .header {
-    grid-column: 2 / 3;
+    grid-column: span 4;
     text-align: center;
     margin: auto;
     font-size: 2rem;
-    width: 200px;
+    width: 400px;
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);

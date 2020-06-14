@@ -86,6 +86,7 @@ class Calculator {
   }
 
 let modal = document.querySelector(".modal");
+//let closeBtn = document.querySelector(".close-btn");
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
@@ -97,10 +98,14 @@ const currentOperandTextElement = document.querySelector('[data-current-operand]
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
 document.addEventListener('click', () => {
-    if (calculator.currentOperand == 165) {
-      modal.style.display = 'block';
+    if (calculator.currentOperand == 20) {
+        modal.style.display = 'block';
     }
 })
+/*
+closeBtn.onclick = function(){
+  modal.style.display = "none"
+}*/
 
 window.onclick = function(e){
   if(e.target == modal){
