@@ -137,3 +137,23 @@ a {
     text-decoration: none;
     color: rgba(255, 255, 255, .75);
 }
+
+.bubble {
+    color: rgba(255, 255, 255, .75);
+    position: relative;
+    left: 100px;
+    top: -686px;
+    border-radius: 25px;
+    width: 250px;
+    border: 5px solid rgba(255, 255, 255, .75);
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width: 1200px) {
+    .bubble {
+        position: static;
+        width: 400px;
+        margin: auto;
+    }
+}

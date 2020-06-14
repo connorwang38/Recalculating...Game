@@ -97,7 +97,7 @@ const currentOperandTextElement = document.querySelector('[data-current-operand]
 const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
 document.addEventListener('click', () => {
-    if (calculator.currentOperand == 165) {
+    if (calculator.currentOperand == 37) {
       modal.style.display = 'block';
     }
 })
